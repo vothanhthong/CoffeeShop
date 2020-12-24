@@ -20,11 +20,6 @@
   margin-right: 50px;
 }
 
-.hotline em {
-  color: white;
-  size: 12px;
-}
-
 .hotline a {
   color: white;
   text-decoration: none;
@@ -71,8 +66,46 @@
 
 .center-fit {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: auto;
   margin: auto;
+}
+
+.introduce {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.latte {
+  max-width: 30%;
+  max-height: auto;
+  transform: rotate(10deg);
+  margin-left: 40px;
+}
+
+.founder {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.photofounder {
+  max-width: 20%;
+  max-height: auto;
+  transform: rotate(0deg);
+  margin-left: 40px;
+}
+
+.information {
+  min-height: 150px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 
