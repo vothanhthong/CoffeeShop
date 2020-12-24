@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  min-height: 5vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hotline { 
+  margin-left: 100px;
+}
+.navsign {
+  margin-right: 100px;
+}
+
+.hotline a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.navsign a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
