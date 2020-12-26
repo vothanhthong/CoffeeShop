@@ -120,7 +120,9 @@
   border-bottom: 1px solid #cf7500;
 }
 
-
+.navlinks {
+  margin-top: 50px;
+}
 
 /*--------------------------------------*/
 .center-fit {
