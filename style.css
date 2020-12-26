@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*--------------------------------------*/
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -16,9 +16,7 @@
 .hotline { 
   margin-left: 50px;
 }
-.navsign {
-  margin-right: 50px;
-}
+
 
 .hotline a {
   color: white;
@@ -28,48 +26,107 @@
   font-size: 12px;
 }
 
-.navsign a {
-  color: white;
-  text-decoration: none;
+.navsign {
   text-align: center;
-  letter-spacing: 2px;
-  font-size: 12px;
+  display: flex;
+}
+
+.navsign ul {
+  margin-right: 50px;
+  display: inline-flex;
+}
+
+.navsign li {
+  list-style: none;
+  display: inline;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.secondnav {
+.navsign a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+/*--------------------------------------*/
+.secondnav{
   display: flex;
-  justify-content: space-between;
-  background-color: #f0a500;
+  justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f0a500;
+}
+.secondnav::after{
+  content: '';
+  clear: both;
+  display: table;
 }
 
 .logo {
-  margin-left: 50px;
+  float: left;
+  padding-left: 50px;
 }
 
-.navlinks {
+.secondnav ul{
+  float: right;
+  list-style: none;
   margin-right: 50px;
-  margin-bottom: 0px;
+  position: relative;
+}
+.secondnav ul li{
+  float: left;
+  display: inline-block;
+  background: #f0a500;
+  margin: 0 5px;
 }
 
-.navlinks a {
+.secondnav ul li a{
   color: black;
   text-decoration: none;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  line-height: 50px;
+  font-size: 15px;
+  padding: 8px 15px;
 }
 
+.secondnav ul li a:hover{
+  border-radius: 5px;
+  color: white;
+}
+
+.secondnav ul ul{
+  position: absolute;
+  top: 50px;
+  border-top: 3px solid #cf7500;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.secondnav ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+
+.secondnav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #cf7500;
+}
+
+
+
+/*--------------------------------------*/
 .center-fit {
   max-width: 100%;
   max-height: auto;
   margin: auto;
 }
 
+/*--------------------------------------*/
 .introduce {
   min-height: 350px;
   display: flex;
