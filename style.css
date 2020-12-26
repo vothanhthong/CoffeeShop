@@ -49,6 +49,9 @@
   letter-spacing: 2px;
   font-size: 12px;
 }
+.topnav a:hover{
+  color: #f0a500;
+}
 
 /*--------------------------------------*/
 .secondnav{
